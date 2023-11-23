@@ -10,6 +10,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow-y: hidden;
 }
 
 .header{
@@ -18,10 +19,11 @@ body{
   background-color: rgba(0, 0, 0, 0.712);
   padding: 10px;
   text-align: center;
+  margin-bottom: 20vh;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   backdrop-filter: blur(2px);
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
   .title{
     color: white;
     margin: 0;
@@ -32,8 +34,9 @@ body{
 .form{
   width: 80%;
   padding: 15px 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.585);
   display: flex;
@@ -137,5 +140,12 @@ body{
   to{
     opacity: 1;
     scale: 1;
+  }
+}
+
+
+@media screen and (min-width:1024px) {
+  .form{
+    width: 25%;
   }
 }
