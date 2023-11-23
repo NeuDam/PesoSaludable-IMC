@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-image: url('https://wallpapercosmos.com/w/full/1/6/d/138467-3840x2160-desktop-4k-spirited-away-wallpaper-image.jpg');
+  background-size: 250%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+  width: 100%;
+  min-height: 10vh;
+  background-color: rgba(0, 0, 0, 0.712);
+  padding: 10px;
+  text-align: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  backdrop-filter: blur(2px);
+  margin-bottom: 60px;
+  .title{
+    color: white;
+    margin: 0;
+  }
+
+}
+
+.form{
+  width: 80%;
+  padding: 15px 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.585);
+  display: flex;
+  backdrop-filter: blur(5px);
+  flex-direction: column;
+  gap: .2em;
+  border-radius: 10px;
+}
+
+.input_form{
+  text-align: center;
+  margin-bottom: .5em;
+  border: none;
+  outline: 1px solid black;
+  padding: 5px 2px;
+  font-size: .9em;
+  border-radius: 8px;
+}
+
+.sub_title{
+  font-size: 1.2em;
+  width: 90%;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 12px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.submit_button{
+  font-size: 1em;
+  padding: 8px;
+  letter-spacing: 1px;
+  border: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.result_popup{
+  visibility: hidden;
+  user-select: none;
+  position: absolute;
+  width: 80%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.854);
+  backdrop-filter: blur(20px);
+  padding: 8px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 0 20px white;
+  border-radius: 10px;
+  z-index: 50;
+
+  section{
+    position: relative;
+  }
+
+}
+
+.bx{
+  
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 1.5em;
+}
+
+.animation_pop{
+  visibility: visible;
+  animation: popup 1.2s forwards;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #141414;
+  width: 100%;
+  padding: 5px;
+  box-shadow: 0 -2px 30px 10px rgb(46, 42, 42);
+}
+
+.footer p{
+  color: white;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes popup {
+  from{
+    opacity: 0;
+    scale: 0
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
