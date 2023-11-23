@@ -5,8 +5,8 @@
 body{
   margin: 0;
   background-image: url('https://wallpapercosmos.com/w/full/1/6/d/138467-3840x2160-desktop-4k-spirited-away-wallpaper-image.jpg');
-  background-size: 250%;
-  background-position: center top;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }

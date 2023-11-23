@@ -9,7 +9,7 @@ function App() {
 
   const messagges = {
     bajoPeso: 'Usted se encuentra en bajo peso, por lo tanto le hace falta aumentar su masa corporal',
-    pesoNormal: 'El indice de su masa corporal se encuentra en los rasgos normales. (Peso Saludable)',
+    pesoNormal: 'El indice de su masa corporal se encuentra en los rangos normales. (Peso Saludable)',
     sobrePeso: 'Usted se encuentra en sobrepeso, no tan grave, pero deberìa reducir su IMC',
     obesidad: 'Usted se encuentra en OBESIDAD, recurra a un Medico para que l@ oriente para reducir su IMC'
   }
