@@ -49,14 +49,13 @@ function App() {
 
       <main>
         <div className="result_popup">
-          <section>
             <i className='bx bxs-x-circle' onClick={() => {
               const popup = document.querySelector('.result_popup')
 
               popup.classList.remove('animation_pop')
             }}></i>
             <p className="text_result">{score}</p>
-          </section>
+
         </div>
         <form className='form' onSubmit={(e) => {
           e.preventDefault()

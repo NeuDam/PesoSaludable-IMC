@@ -74,6 +74,7 @@ body{
   border: none;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  cursor: pointer;
 }
 
 .result_popup{
@@ -86,24 +87,20 @@ body{
   backdrop-filter: blur(20px);
   padding: 8px;
   color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   box-shadow: 0 0 20px white;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   z-index: 50;
-
-  section{
-    position: relative;
-  }
-
 }
 
 .bx{
-  
+  cursor: pointer;
   position: absolute;
   right: 5px;
   top: 5px;
@@ -132,6 +129,7 @@ body{
   margin-right: auto;
 }
 
+
 @keyframes popup {
   from{
     opacity: 0;
@@ -147,5 +145,8 @@ body{
 @media screen and (min-width:1024px) {
   .form{
     width: 25%;
+  }
+  .result_popup{
+    width: 45%;
   }
 }
